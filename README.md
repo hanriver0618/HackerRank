@@ -1,1 +1,3 @@
-# hadkerrank-10DaysOfStatistics
+# HadkerRank
+
+https://www.hackerrank.com/
