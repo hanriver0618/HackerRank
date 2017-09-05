@@ -1,16 +1,14 @@
-dic={}
-for i in range(int(input())):
+phone={}
+n = int(input())
+for _ in range(n):
 	temp = list(map(str,input().split()))
-	dic[temp[0]]=temp[1]
+	phone[temp[0]]=temp[1]
 
-answer={}
-while True:
-	name = str(input())
-	if name == "":
-		break
+for _ in range(n):
+	key = str(input())
+	value = phone.get(key, "Not found")
+	if value != "Not found":
+		print(key+'='+phone[key])
 	else:
-		phone = dic.get(name,'Not found')
-		answer[name]=phone
+		print(value)
 
-for key, value in answer.items() :
-    print(key, value)
